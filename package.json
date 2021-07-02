@@ -1,0 +1,20 @@
+{
+  "name": "collector_serv",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node index.js"
+  },
+  "description": "ExpressApp1",
+  "author": {
+    "name": "Meng-Yuan Haung"
+  },
+  "dependencies": {
+    "mongodb": "^3.6.9",
+    "typescript": "^4.3.4"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.6.18"
+  }
+}
