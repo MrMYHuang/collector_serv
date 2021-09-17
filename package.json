@@ -1,12 +1,13 @@
 {
   "name": "collector_serv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "build": "tsc",
-    "start": "node index.js"
+    "start": "node index.js",
+    "pack": "rm -f a.zip && zip -r a.zip dist node_modules package.json index.js"
   },
-  "description": "ExpressApp1",
+  "description": "",
   "author": {
     "name": "Meng-Yuan Haung"
   },

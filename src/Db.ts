@@ -23,7 +23,7 @@ export async function connectDb(name: string) {
 
 export async function getAllRecords() {
     try {
-        const data = (await db.collection(tableName).find({}).toArray()) as GameRecord[];
+        const data = (await db.collection(tableName).find({}).sort('score', -1).toArray()) as GameRecord[];
         return data;
     } catch (error) {
         throw (error);
